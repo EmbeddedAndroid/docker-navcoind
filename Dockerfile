@@ -29,7 +29,6 @@ RUN apt-get update && apt-get install -yq --no-install-recommends \
       libminiupnpc-dev \
       # Git cli
       git-core \
-      && apt-get install -o Dpkg::Options::="--force-confold" --force-yes -yq libapache2-mod-php5 \
       && apt-get clean \
       && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
